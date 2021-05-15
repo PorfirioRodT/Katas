@@ -19,6 +19,18 @@ puts isPalindrome("oso")
 puts isPalindrome("perro")
 puts isPalindrome("12321")
 
+def isAnIsogram(str: String)
+
+    letters = str.downcase.delete("^a-z").chars
+    letters.uniq == letters
+
+end
+
+puts isAnIsogram("fresa")
+puts isAnIsogram("maria")
+puts isAnIsogram("pedro")
+puts isAnIsogram("perro")
+
 
 
 
